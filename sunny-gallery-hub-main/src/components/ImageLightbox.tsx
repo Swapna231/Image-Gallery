@@ -19,7 +19,7 @@ export function ImageLightbox({ image, images, onClose, onNext, onPrev }: ImageL
       if (e.key === "ArrowRight") onNext();
       if (e.key === "ArrowLeft") onPrev();
     },
-    [onClose, onNext, onPrev]
+    [onClose, onNext, onPrev],
   );
 
   useEffect(() => {
@@ -81,9 +81,7 @@ export function ImageLightbox({ image, images, onClose, onNext, onPrev }: ImageL
         />
         {/* Caption */}
         <div className="absolute bottom-0 left-0 right-0 rounded-b-lg bg-black/50 px-6 py-3 backdrop-blur-sm">
-          <p className="text-center text-lg font-semibold text-white">
-            {image.title}
-          </p>
+          <p className="text-center text-lg font-semibold text-white">{image.title}</p>
           <p className="text-center text-sm text-white/70">
             {currentIndex + 1} / {images.length}
           </p>

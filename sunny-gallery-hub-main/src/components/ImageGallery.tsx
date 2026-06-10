@@ -33,9 +33,8 @@ export function ImageGallery() {
     setLightboxImage(filteredImages[prevIndex].id);
   };
 
-  const currentLightboxImage = lightboxImage !== null
-    ? filteredImages.find((img) => img.id === lightboxImage)
-    : undefined;
+  const currentLightboxImage =
+    lightboxImage !== null ? filteredImages.find((img) => img.id === lightboxImage) : undefined;
 
   return (
     <div className="w-full">
@@ -44,9 +43,7 @@ export function ImageGallery() {
         <h1 className="text-4xl font-bold tracking-tight text-white drop-shadow-sm sm:text-5xl">
           Image Gallery
         </h1>
-        <p className="mt-3 text-white/80">
-          Browse our curated collection of stunning photography
-        </p>
+        <p className="mt-3 text-white/80">Browse our curated collection of stunning photography</p>
       </div>
 
       {/* Filter Buttons */}
@@ -94,12 +91,8 @@ export function ImageGallery() {
             {/* Overlay on hover */}
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/40">
               <div className="translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="text-lg font-semibold text-white drop-shadow-lg">
-                  {image.title}
-                </p>
-                <p className="mt-1 text-sm text-white/80 capitalize">
-                  {image.category}
-                </p>
+                <p className="text-lg font-semibold text-white drop-shadow-lg">{image.title}</p>
+                <p className="mt-1 text-sm text-white/80 capitalize">{image.category}</p>
               </div>
             </div>
           </div>

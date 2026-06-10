@@ -5,9 +5,17 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Responsive Image Gallery" },
-      { name: "description", content: "A beautiful responsive image gallery with category filtering and lightbox navigation. Browse stunning photography from nature, city, and animals." },
+      {
+        name: "description",
+        content:
+          "A beautiful responsive image gallery with category filtering and lightbox navigation. Browse stunning photography from nature, city, and animals.",
+      },
       { property: "og:title", content: "Responsive Image Gallery" },
-      { property: "og:description", content: "A beautiful responsive image gallery with category filtering and lightbox navigation." },
+      {
+        property: "og:description",
+        content:
+          "A beautiful responsive image gallery with category filtering and lightbox navigation.",
+      },
       { property: "og:type", content: "website" },
     ],
   }),
