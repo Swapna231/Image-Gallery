@@ -1,0 +1,9 @@
+{
+  "name": "sunny-gallery-hub-main-root",
+  "private": true,
+  "scripts": {
+    "build": "cd sunny-gallery-hub-main && npm install --no-audit --no-fund && npm run build",
+    "dev": "cd sunny-gallery-hub-main && npm run dev",
+    "start": "cd sunny-gallery-hub-main && npm run preview"
+  }
+}

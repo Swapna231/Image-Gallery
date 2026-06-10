@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "sunny-gallery-hub-main/dist/client" }
+    }
+  ],
+  "routes": [
+    { "src": "^/(.*)$", "dest": "/sunny-gallery-hub-main/dist/client/$1" },
+    { "src": "^/$", "dest": "/sunny-gallery-hub-main/dist/client/index.html" }
+  ]
+}
